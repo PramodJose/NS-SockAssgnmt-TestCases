@@ -29,7 +29,9 @@ Download the files _VerifyOutput.py_ and _expectedOutput.txt_. These two files m
 	Eg: `python2 VerifyOutput.py output.txt`
 	
 	The program will display whether your program passed all the test cases or not.\
-	If the message displayed is `The program passed all the test cases!!`; then your program is fine and you can upload your solution to autolab.\
+	If the message displayed is `The program passed all the test cases!!`; then your program is fine and you can upload your solution to autolab. Ensure that your program can handle input strings of at least 9000 bytes. In other words, if you have used the `recv()` method of the socket class, then your code should be like:-\
+	`sockt.recv(9000)`\
+	Assuming that the socket object name is `sockt`.\
 	Else, if you get a message saying `The program failed for the following test case(s)`, then you would also be shown the test case numbers which your program failed.\
 	The first test case is on the first line of the file _testCases.txt_, the second test case on the second line and so on. Try debugging your code with the test case(s) for which your solution failed.
 	
