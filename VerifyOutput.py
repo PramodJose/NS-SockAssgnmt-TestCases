@@ -18,7 +18,7 @@ while len(refLine) > 5:
 
     if inDict != refDict:
         if passedAll:
-            print("\nThe program failed for the follolwing test case(s):-")
+            print("\nThe program failed for the following test case(s):-")
         passedAll = False
         print(testCaseNum)
 
